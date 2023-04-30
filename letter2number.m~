@@ -1,5 +1,5 @@
 % function to convert entered name of any form into a number 
-function num = letter2number( word )
+function    num = letter2number( word )
 % get asc number for letters you input
     asc = double(upper(word));
 % create an array of numbers from the input words.

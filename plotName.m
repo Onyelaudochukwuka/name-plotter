@@ -1,5 +1,5 @@
 % Function to plot values
-function [p] = plotName( word )
+function p = plotName( word )
 % transform letters into word
     y = letter2number(word);
 %  get set of values for x which is the length of the word

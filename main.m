@@ -8,8 +8,8 @@
 clear, clc, close all
 
 % run programme with my name
-[poly] = plotName('Udochukwuka Onyela');
+poly = plotName('Udochukwuka Onyela');
 
-% Uncomment to plot yzour name's
+% Uncomment to plot your name's
 % yourName = input('Enter Your Name: ');
 % [polyOfYourName] = plotName(yourName);
