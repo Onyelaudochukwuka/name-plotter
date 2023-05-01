@@ -1,17 +1,11 @@
 % function to convert entered name of any form into a number 
+%   Example: letter2number('AB') returns [1,2]
 function num = letter2number( word )
 % get asc number for letters you input
     asc = double(upper(word));
 % create an array of numbers from the input words.
     wordTonumArr = asc - double('A') + 1;
 %  create output arrays
-    num = [];
-%     loop thgrough curerent enteries and take out special characters
-    for index = 1:length(wordTonumArr)
-%         check if looped value is a letter of the alphabet
-        if wordTonumArr(index) > 0 && wordTonumArr(index) < 27
-%             assign passed value to the num array
-            num(end + 1) = wordTonumArr(index); %#ok<*AGROW>
-        end
-    end
+    col= wordTonumArr > 0;
+    num = wordTonumArr(col);
 end
