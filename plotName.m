@@ -19,9 +19,9 @@ function poly = plotName( word )
     xlabel('Index'),ylabel('Numerical Value');
     title(['A plot of ', word, ' numerical values']);
     grid on;
-    hold on;
 % hold on for second plot
     hold on;
 % polynomial  graph of my name
     plot(x,y1, 'r--')
+    legend('Normal Values','Polynomial Graph');
 end
